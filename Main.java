@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Bob的成绩: " + manager.getGrade("Bob"));
 
         // 这里假设李四修改了Main Class,方便后续添加新的功能
-        //System.out.println("所有学生的平均成绩: " + manager.getAverageGrade());
+        System.out.println("所有学生的平均成绩: " + manager.getAverageGrade());
     }
 }
 

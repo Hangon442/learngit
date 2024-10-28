@@ -17,4 +17,16 @@ public class StudentManager {
     public Integer getGrade(String name) {
         return studentGrades.get(name);
     }
+
+    // 新增：计算所有学生的平均成绩
+    public double getAverageGrade() {
+        if (studentGrades.isEmpty()) {
+            return 0.0;
+        }
+        int total = 0;
+        for (int grade : studentGrades.values()) {
+            total += grade;
+        }
+        return (double) total / studentGrades.size();
+    }
 }
